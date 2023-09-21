@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -35,3 +36,83 @@
   </div>
 </body>
 </html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link 
+      rel="stylesheet"
+      href="./style.css"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-card">
+      <div class="first-part">
+        <div class="labels">
+          <label>Day</label>
+          <label>Month</label>
+          <label>Year</label>
+        </div>
+        <form>
+          <div class="inputs">
+            <input
+              type="number"
+              id="i-day"
+              min="1"
+              max="31"
+              placeholder="DD"
+              required
+            />
+            <input
+              type="number"
+              id="i-month"
+              placeholder="MM"
+              min="1"
+              max="12"
+              required
+            />
+            <input type="number" id="i-year" placeholder="YYYY" required />
+          </div>
+          <hr />
+          <button class="submit" type="submit">
+            <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
+          </button>
+        </form>
+      </div>
+
+      <div class="second-part">
+        <label><span id="o-year">--</span>years</label>
+        <label><span id="o-month">--</span>months</label>
+        <label><span id="o-day">--</span>days</label>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Uday Tondwal</a>.
+    </div>
+  </body>
+</html>
+>>>>>>> eabf443 (Boilerplate ready)
