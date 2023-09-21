@@ -18,6 +18,11 @@
     src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
+@font-face {
+    font-family: pop;
+    src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
 
 body{
     width: 100%;
@@ -68,7 +73,7 @@ body{
 .first-part .inputs{
    display: flex;
    justify-content: space-evenly;
-   margin-bottom: 4rem;
+   margin-bottom: .5rem;
 }
 
 .first-part .inputs input{
@@ -80,6 +85,20 @@ body{
     border: 1px solid lightgray;
     font-family: pop-b;
     font-size: 1em;
+}
+
+.warn-msgs{
+    font-size: .5em;
+    margin-bottom: 3rem;
+    font-family: pop;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.warn-msgs span{
+    margin: 0 1em;
+    color: hsl(0 100% 67%);
+    font-weight: 400;
 }
 
 button {
@@ -106,4 +125,11 @@ button img {
 .second-part label span{
     color: blueviolet;
     margin: 1rem 1rem;
+}
+
+
+@media only screen and  (min-width: 420px) and (max-width: 1440px) {
+    
+
+
 }
