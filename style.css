@@ -1,4 +1,26 @@
+@font-face {
+    font-family: pop-b;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: pop-bi;
+    src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: pop-xb;
+    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: pop-xbi;
+    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+
+
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
     background: rgb(12,62,153);
@@ -9,4 +31,79 @@ body{
     width: 80%;
     height: 80%;
     background-color: white;
+    margin: 4rem 1.5rem;
+    padding: 3rem 1rem;
+    border-radius: 2em;
+    border-bottom-right-radius: 8em;
+    font-family: pop-b;
+}
+
+.first-part .labels{
+    margin: .2rem .5rem;
+}
+
+.first-part .labels label{
+    margin: 0 .5rem;
+    color: gray;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.first-part .labels label:nth-child(1){
+    position: relative;
+    left: -.4rem; 
+}
+
+.first-part .labels label:nth-child(2){
+    position: relative;
+    left: 3.5rem;
+}
+
+.first-part .labels label:nth-child(3){
+    position: relative;
+    left: 6.3rem;
+}
+
+.first-part .inputs{
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 4rem;
+}
+
+.first-part .inputs input{
+    width: 80%;
+    margin: 0 .5rem;
+    padding: 1rem .7rem;
+    padding-right: .9rem;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-family: pop-b;
+    font-size: 1em;
+}
+
+button {
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: relative;
+    bottom: 2.2rem;
+    left: 8.5rem;
+}
+
+button img {
+    width: 1.5em;
+}
+
+.second-part{
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-family: pop-xbi;
+}
+
+.second-part label span{
+    color: blueviolet;
+    margin: 1rem 1rem;
 }
