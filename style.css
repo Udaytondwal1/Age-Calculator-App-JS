@@ -1,8 +1,12 @@
 body{
     margin: 0;
     padding: 0;
+    background: rgb(12,62,153);
+    background: linear-gradient(90deg, rgba(12,62,153,0.9646597851763715) 16%, rgba(209,200,58,1) 50%, rgba(132,36,179,0.9699028664892846) 86%);
 }
 
 .main-card {
-    
+    width: 80%;
+    height: 80%;
+    background-color: white;
 }
