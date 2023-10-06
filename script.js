@@ -28,8 +28,18 @@ var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
   var m = m2 - m1;
   var y = y2 - y1;
 
+if (y1 > y2) {
+
+  document.querySelectorAll(".warn-msgs span")[0].style.display = "block";
+
+document.querySelectorAll(".warn-msgs span")[0].innerHTML = "Year Should be in Past";
+  
+} else {
+document.querySelectorAll(".warn-msgs span")[0].style.display = "none";
 oy.innerHTML = y;
 om.innerHTML = m;
 od.innerHTML = d;
+}
+
 });
 

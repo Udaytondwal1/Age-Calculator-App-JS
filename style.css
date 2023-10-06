@@ -99,6 +99,7 @@ body{
     margin: 0 1em;
     color: hsl(0 100% 67%);
     font-weight: 400;
+    display: none;
 }
 
 button {
@@ -118,13 +119,14 @@ button img {
 .second-part{
     display: flex;
     flex-direction: column;
-    font-size: 3rem;
+    font-size: 2.6rem;
     font-family: pop-xbi;
 }
 
 .second-part label span{
     color: blueviolet;
     margin: 1rem 1rem;
+    transition: all ease .5s;
 }
 
 
