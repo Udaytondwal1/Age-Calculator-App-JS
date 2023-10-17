@@ -73,7 +73,7 @@ body {
   flex-direction: column;
   text-transform: uppercase;
   color: grey;
-  font-size: .4rem;
+  font-size: .6rem;
 }
 
 .warn-msgs {
