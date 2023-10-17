@@ -1,137 +1,130 @@
 @font-face {
-    font-family: pop-b;
-    src: url(./assets/fonts/Poppins-Bold.ttf);
+  font-family: pop-b;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
 }
 
 @font-face {
-    font-family: pop-bi;
-    src: url(./assets/fonts/Poppins-BoldItalic.ttf);
+  font-family: pop-bi;
+  src: url(./assets/fonts/Poppins-BoldItalic.ttf);
 }
 
 @font-face {
-    font-family: pop-xb;
-    src: url(./assets/fonts/Poppins-ExtraBold.ttf);
+  font-family: pop-xb;
+  src: url(./assets/fonts/Poppins-ExtraBold.ttf);
 }
 
 @font-face {
-    font-family: pop-xbi;
-    src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
+  font-family: pop-xbi;
+  src: url(./assets/fonts/Poppins-ExtraBoldItalic.ttf);
 }
 
 @font-face {
-    font-family: pop;
-    src: url('./assets/fonts/Poppins-Regular.ttf');
+  font-family: pop;
+  src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
 
-body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-        background: rgb(12,62,153);
-    background: linear-gradient(90deg, rgba(12,62,153,0.9646597851763715) 16%, rgba(209,200,58,1) 50%, rgba(132,36,179,0.9699028664892846) 86%);
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f0cc7a
 }
 
 .main-card {
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    margin: 4rem 1.5rem;
-    padding: 3rem 1rem;
-    border-radius: 2em;
-    border-bottom-right-radius: 8em;
-    font-family: pop-b;
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin: 4rem 1.5rem;
+  padding: 2rem 1rem;
+  border-radius: 2em;
+  border-bottom-right-radius: 8em;
+  font-family: pop-b;
 }
 
-.first-part .labels{
-    margin: .2rem .5rem;
+.first-part {
+  font-size: .7rem;
 }
 
-.first-part .labels label{
-    margin: 0 .5rem;
-    color: gray;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-size: .7em;
+.first-part .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
-.first-part .labels label:nth-child(1){
-    position: relative;
-    left: -.4rem; 
+.first-part .inputs input {
+  width: 4.5rem;
+  height: 2.8rem;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding-left: .5em;
+  font-weight: 700;
+
 }
 
-.first-part .labels label:nth-child(2){
-    position: relative;
-    left: 3.5rem;
+.first-part .inputs input::placeholder {
+  font-weight: 700;
 }
 
-.first-part .labels label:nth-child(3){
-    position: relative;
-    left: 6.3rem;
+.first-part .inputs div {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: grey;
+  font-size: .4rem;
 }
 
-.first-part .inputs{
-   display: flex;
-   justify-content: space-evenly;
-   margin-bottom: .5rem;
+.warn-msgs {
+  font-size: .5em;
+  margin-bottom: 3rem;
+  font-family: pop;
+  display: flex;
+  justify-content: space-between;
 }
 
-.first-part .inputs input{
-    width: 80%;
-    margin: 0 .5rem;
-    padding: 1rem .7rem;
-    padding-right: .9rem;
-    border-radius: 10px;
-    border: 1px solid lightgray;
-    font-family: pop-b;
-    font-size: 1em;
-}
+.warn-msgs div{
+  width: 5rem;
+  
+  }
 
-.warn-msgs{
-    font-size: .5em;
-    margin-bottom: 3rem;
-    font-family: pop;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.warn-msgs span{
-    margin: 0 1em;
-    color: hsl(0 100% 67%);
-    font-weight: 400;
-    display: none;
+.warn-msgs span {
+  margin: 0 1em;
+  color: hsl(0 100% 67%);
+  font-weight: 400;
 }
 
 button {
-    padding: 1rem;
-    border: none;
-    border-radius: 50%;
-    background-color: blueviolet;
-    position: relative;
-    bottom: 2.2rem;
-    left: 8.5rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  background-color: blueviolet;
+  position: relative;
+  bottom: 2.2rem;
+  left: 8.5rem;
+}
+
+button:hover {
+  warns.innerHTML="Fields should not be empty";
 }
 
 button img {
-    width: 1.5em;
+  width: 1.5em;
 }
 
-.second-part{
-    display: flex;
-    flex-direction: column;
-    font-size: 2.6rem;
-    font-family: pop-xbi;
+.second-part {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.6rem;
+  font-family: pop-xbi;
 }
 
-.second-part label span{
-    color: blueviolet;
-    margin: 1rem 1rem;
-    transition: all ease .5s;
+.second-part label span {
+  color: blueviolet;
+  margin: 1rem 1rem;
+  transition: all 1s;
 }
 
 
-@media only screen and  (min-width: 420px) and (max-width: 1440px) {
-    
-
-
-}
+@media only screen and (min-width: 420px) and (max-width: 1440px) {}
