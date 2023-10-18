@@ -82,6 +82,7 @@ body {
   font-family: pop;
   display: flex;
   justify-content: space-between;
+  height: 2.5rem;
 }
 
 .warn-msgs div{
@@ -123,8 +124,26 @@ button img {
 .second-part label span {
   color: blueviolet;
   margin: 1rem 1rem;
-  transition: all 1s;
+  transition: all ease 1s;
 }
 
+.second-part label .animate {
+  color: blueviolet;
+  margin: 1rem 1rem;
+  transition: all ease 1s;
+  animation: opacityAnimation 2s infinite;
+}
+
+@keyframes opacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 @media only screen and (min-width: 420px) and (max-width: 1440px) {}

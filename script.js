@@ -32,6 +32,13 @@ function caldate() {
   var m = m2 - m1.value;
   var y = y2 - y1.value;
 
+  var element = document.querySelectorAll('.ani');
+  element[0].classList.add("animate");
+element[1].classList.add("animate");
+element[2].classList.add("animate");
+
+  console.log(element);
+
   document.getElementById('o-year').innerHTML = y;
   document.getElementById('o-month').innerHTML = m;
   document.getElementById('o-day').innerHTML = d;
