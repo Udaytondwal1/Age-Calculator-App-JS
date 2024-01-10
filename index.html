@@ -1,80 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./style.css" />
 
-  <link rel="stylesheet" href="./style.css" />
+    <title>Age calculator app</title>
 
-  <title>Age calculator app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="first-part">
+          <div class="inputs">
+            <div>
+              <label>Day</label>
+              <input
+                type="number"
+                id="i-day"
+                min="1"
+                max="31"
+                placeholder="DD"
+                required
+              />
+            </div>
 
-<body>
-  <div class="main-card">
-    <div class="first-part">
+            <div>
+              <label>Month</label>
+              <input
+                type="number"
+                id="i-month"
+                placeholder="MM"
+                min="1"
+                max="12"
+                required
+              />
+            </div>
+            <div>
+              <label>Year</label>
+              <input type="number" id="i-year" placeholder="YYYY" required />
+            </div>
+          </div>
 
-      <div class="inputs">
-        <div>
-          <label>Day</label>
-          <input type="number" id="i-day" min="1" max="31" placeholder="DD" required />
+          <div class="warn-msgs">
+            <div>
+              <span></span>
+            </div>
+            <div>
+              <span></span>
+            </div>
+            <div>
+              <span></span>
+            </div>
+          </div>
+          <hr />
+          <button id="submit" type="submit">
+            <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
+          </button>
         </div>
 
-        <div>
-          <label>Month</label> <input type="number" id="i-month" placeholder="MM" min="1" max="12" required />
-        </div>
-        <div>
-          <label>Year</label>
-          <input type="number" id="i-year" placeholder="YYYY" style="" required />
+        <div class="second-part">
+          <label> <span class="ani" id="o-year">--</span>years</label>
+          <label><span class="ani" id="o-month">--</span>months</label>
+          <label><span class="ani" id="o-day">--</span>days</label>
         </div>
       </div>
-
-      <div class="warn-msgs">
-        <div>
-          <span></span>
-        </div>
-        <div>
-          <span></span>
-        </div>
-        <div>
-          <span></span>
-        </div>
-      </div>
-      <hr />
-      <button id="submit" type="submit">
-        <img src="./assets/images/icon-arrow.svg" alt="arrow-icon" />
-      </button>
-
     </div>
-
-    <div class="second-part">
-      <label>
-      <span class="ani" id="o-year">--</span>years</label>
-      <label><span class="ani" id="o-month">--</span>months</label>
-      <label><span class="ani" id="o-day">--</span>days</label>
-    </div>
-  </div>
-
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-      href="https://github.com/Udaytondwal1">Uday Tondwal</a>.
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>

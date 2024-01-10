@@ -20,52 +20,80 @@
 
 @font-face {
   font-family: pop;
-  src: url('./assets/fonts/Poppins-Regular.ttf');
+  src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 
-
-body {
-  width: 100%;
+body,
+html {
   margin: 0;
   padding: 0;
-  background-color: #f0cc7a
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
-.main-card {
-  width: 80%;
-  height: 80%;
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(243, 237, 237);
+  /* border: 2px solid red;  */
+}
+
+.card {
+  height: 55vh;
+  width: 78vw;
   background-color: white;
-  margin: 4rem 1.5rem;
-  padding: 2rem 1rem;
-  border-radius: 2em;
-  border-bottom-right-radius: 8em;
+  border-radius: 20px;
+  border-bottom-right-radius: 90px;
+  margin: 11vh 4.5vw;
   font-family: pop-b;
+  position: absolute;
+  padding: 4vh 5vw;
 }
 
 .first-part {
-  font-size: .7rem;
+  font-size: 1rem;
+  /* border: 2px solid red; */
+}
+
+.first-part label {
+  font-size: 0.8rem;
+  font-family: pop-b;
+  letter-spacing: 2.5px;
 }
 
 .first-part .inputs {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  width: 78vw;
   height: 100%;
+  /* border: 2px solid red; */
+  /* margin-left: .7vw; */
+  /* padding: 0 1vw; */
 }
 
 .first-part .inputs input {
   width: 4.5rem;
-  height: 2.8rem;
-  border: 2px solid lightgrey;
-  border-radius: 5px;
-  padding-left: .5em;
+  height: 2rem;
+  border: 2px solid rgb(205, 204, 204);
+  border-radius: 8px;
+  padding: 1vh;
+  padding-bottom: 1.5vh;
   font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 0.5vh;
+  transition: all ease 0.5s;
+}
 
+.first-part .inputs input:hover {
+  border-color: hsl(259, 100%, 65%);
+  curser: pointer;
 }
 
 .first-part .inputs input::placeholder {
   font-weight: 700;
+  font-size: 1rem;
 }
 
 .first-part .inputs div {
@@ -73,25 +101,28 @@ body {
   flex-direction: column;
   text-transform: uppercase;
   color: grey;
-  font-size: .6rem;
+  font-size: 0.6rem;
+  margin-bottom: .8vh;
+  /* border: 2px solid red; */
 }
 
 .warn-msgs {
-  font-size: .5em;
-  margin-bottom: 3rem;
+  font-size: .8vh;
+  width: 78vw;
+  /* margin-left: .2vw; */
+  margin-bottom: 4rem;
   font-family: pop;
   display: flex;
   justify-content: space-between;
-  height: 2.5rem;
 }
 
-.warn-msgs div{
-  width: 5rem;
-  
-  }
+.warn-msgs div {
+  width: 22vw;
+  /* border: 2px solid red; */
+}
 
 .warn-msgs span {
-  margin: 0 1em;
+  /* margin: 0 1em; */
   color: hsl(0 100% 67%);
   font-weight: 400;
 }
@@ -100,38 +131,45 @@ button {
   padding: 1rem;
   border: none;
   border-radius: 50%;
-  background-color: blueviolet;
+  background-color: hsl(259, 100%, 65%);
   position: relative;
-  bottom: 2.2rem;
-  left: 8.5rem;
+  bottom: 6vh;
+  left: 32vw;
+  transition: all ease 0.5s;
 }
 
 button:hover {
-  warns.innerHTML="Fields should not be empty";
+  background-color: hsl(0, 0%, 0%);
+  cursor: pointer;
 }
 
 button img {
-  width: 1.5em;
+  width: 2.5em;
 }
 
 .second-part {
   display: flex;
   flex-direction: column;
-  font-size: 2.6rem;
+  font-size: 12vw;
   font-family: pop-xbi;
+  margin-top: -2.5vh;
+  margin-left: -1vw;
+  /* text-align: left; */
+  line-height: 9vh;
+  /* border: 2px solid red; */
 }
 
 .second-part label span {
-  color: blueviolet;
+  color: hsl(259, 100%, 65%);
   margin: 1rem 1rem;
   transition: all ease 1s;
 }
 
 .second-part label .animate {
-  color: blueviolet;
+  color: hsl(259, 100%, 65%);
   margin: 1rem 1rem;
   transition: all ease 1s;
-  animation: opacityAnimation 2s infinite;
+  animation: opacityAnimation 2s;
 }
 
 @keyframes opacityAnimation {
@@ -139,11 +177,88 @@ button img {
     opacity: 0;
   }
   50% {
-    opacity: .5;
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
 
-@media only screen and (min-width: 420px) and (max-width: 1440px) {}
+@media only screen and (min-width: 1025px) {
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .card {
+    height: 70vh;
+    width: 40vw;
+    padding: 4vh 4vw;
+    margin: 11vh 20vw;
+  }
+
+  .first-part .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    height: 100%;
+    /* border: 2px solid red; */
+    /* margin-left: .7vw; */
+    /* padding: 0 1vw; */
+  }
+
+  .first-part .inputs input {
+    width: 7vw;
+    height: 4.5vh;
+    border: 2px solid rgb(205, 204, 204);
+    border-radius: 8px;
+    padding: 1vh;
+    padding-bottom: 1.5vh;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 0.5vh;
+    transition: all ease 0.5s;
+  }
+
+  .warn-msgs {
+    font-size: 1.2vh;
+    width: 30vw;
+    /* margin-left: .2vw; */
+    margin-bottom: 4rem;
+    font-family: pop;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+  }
+  
+  .warn-msgs div {
+    width: 7.5vw;
+    /* border: 2px solid red; */
+  }
+
+
+
+  button {
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    position: relative;
+    bottom: 6vh;
+    left: 36vw;
+    transition: all ease 0.5s;
+  }
+
+  .second-part {
+    display: flex;
+    flex-direction: column;
+    font-size: 6vw;
+    font-family: pop-xbi;
+    margin-top: -2.5vh;
+    margin-left: -1vw;
+    /* text-align: left; */
+    line-height: 13vh;
+    /* border: 2px solid red; */
+  }
+}
