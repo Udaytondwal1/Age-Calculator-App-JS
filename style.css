@@ -109,15 +109,18 @@ html {
 .warn-msgs {
   font-size: .8vh;
   width: 78vw;
+  height: 1vh;
   /* margin-left: .2vw; */
-  margin-bottom: 4rem;
+  /* margin-top: 1vh; */
+  margin-bottom: 7vh;
   font-family: pop;
   display: flex;
   justify-content: space-between;
+  /* border: 2px solid red; */
 }
 
 .warn-msgs div {
-  width: 22vw;
+  width: 23vw;
   /* border: 2px solid red; */
 }
 
@@ -133,8 +136,8 @@ button {
   border-radius: 50%;
   background-color: hsl(259, 100%, 65%);
   position: relative;
-  bottom: 6vh;
-  left: 32vw;
+  bottom: 5vh;
+  left: 31vw;
   transition: all ease 0.5s;
 }
 
