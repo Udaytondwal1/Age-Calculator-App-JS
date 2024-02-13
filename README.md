@@ -1,27 +1,8 @@
-# Frontend Mentor - Age calculator app solution
+<h1 align="center" id="title">Age Calculator App</h1>
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+<p id="description">### The challenge - (from Frontend Mentor)
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
-
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View an age in years, months, and days after submitting a valid date through the form
+Users should be able to:- View an age in years, months, and days after submitting a valid date through the form
 - Receive validation errors if:
   - Any field is empty when the form is submitted
   - The day number is not between 1-31
@@ -31,28 +12,48 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
+</p>
 
-### Screenshot
+<h2>🚀 Demo</h2>
 
-![](./design/mobile-design.jpg)
-![](./design/desktop-preview.jpg)
+[https://udaytondwal1.github.io/Age-Calculator-App-JS/](https://udaytondwal1.github.io/Age-Calculator-App-JS/)
+
+  
+  
+<h2>🧐 Features</h2>
+
+Here're some of the project's best features:
+
+*   User can see their age according to Date of birth
+*   Age in Years, months and Day
+*   Added all the Necessary validations in app
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone this repository using CMD/Terminal</p>
+
+```
+git clone Repo_URL
+```
+
+<p>2. Open https://localhost:3000 in your web browser.</p>
 
 
-### Links
+  
+<h2>💻 Built with</h2>
 
-- Solution URL: [GitHub](https://github.com/Udaytondwal1/Age-Calculator-App-JS)
-- Live Site URL: [Live At](https://udaytondwal1.github.io/Age-Calculator-App-JS/)
+Technologies used in the project:
 
-## My process
+*  Semantic HTML5 markup
+*  CSS custom properties
+*  Flexbox
+*  Mobile-first workflow
+*  Document Object Model
+*  JavaScript
 
-### Built with
+<h2>💖Like my work?</h2>
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
-- Document Object Model
-- JavaScript
+Please give Star if you Like it. Contact Me for any Queries/Issue.<p>https://www.instagram.com/udaytondwal/</p>
 
 
 ### What I learned
@@ -66,4 +67,3 @@ it takes time to debug CSS styling errors.
 - Website - [Uday Tondwal](https://github.com/Udaytondwal1)
 - Frontend Mentor - [@udaytondwal1](https://www.frontendmentor.io/profile/Udaytondwal1)
 - LinkedIn - [@udaytondwal](https://www.linkedin.com/in/udaytondwal/)
-
