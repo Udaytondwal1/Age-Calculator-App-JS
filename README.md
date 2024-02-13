@@ -1,8 +1,8 @@
 <h1 align="center" id="title">Age Calculator App</h1>
 
-<p id="description">### The challenge - (from Frontend Mentor)
+### The challenge - (from Frontend Mentor)
 
-Users should be able to:- View an age in years, months, and days after submitting a valid date through the form
+<p id="description">Users should be able to:- View an age in years, months, and days after submitting a valid date through the form
 - Receive validation errors if:
   - Any field is empty when the form is submitted
   - The day number is not between 1-31
